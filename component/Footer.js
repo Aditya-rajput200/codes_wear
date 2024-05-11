@@ -3,7 +3,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 function Footer() {
   return (
-    <footer class="text-white bg-pink-500 border-2 body-font ">
+    <footer class="text-white bg-pink-500 border-2 body-font mt-12">
       <div class="container px-5 py-24 mx-auto flex   md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-64  flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
           <a class=" items-center md:justify-start justify-center">
@@ -23,7 +23,7 @@ function Footer() {
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-white hover:text-gray-800">First Link</a>
+              <Link href="http://localhost:3000/product/wear"class="text-white  hover:text-gray-800">First Link</Link>  
               </li>
               <li>
                 <a class="text-white hover:text-gray-800">Second Link</a>

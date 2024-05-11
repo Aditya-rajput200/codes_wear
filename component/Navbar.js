@@ -117,9 +117,13 @@ function Navbar( {cart,subTotal,removeFromCart, addToCart ,clearingCart}) {
 
 
  </ol>
+ <div><h2 className='text-black  font-bold'>Subtotal : ₹{subTotal}</h2></div>
      <div className='flex  gap-2'>
      <button className='flex  bg-pink-500 hover:bg-pink-600 font-bold p-2 rounded  ' >
-   <p>Check-out</p><MdOutlineShoppingCartCheckout  className='mt-1  text-2xl ml-1'/>
+      <Link href={'/Checkout'}>
+      <p>Check-out</p><MdOutlineShoppingCartCheckout  className='mt-1  text-2xl ml-1'/>
+      </Link>
+  
 
    </button>
 
