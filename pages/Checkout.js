@@ -96,7 +96,7 @@ const Checkout = ({subTotal}) => {
                                         <span className="text-right px-2">State</span>
                                         <input name="state" className="focus:outline-none px-3" placeholder="CA" />
                                     </label>
-                                    <label className="xl:w-1/4 xl:inline-flex py-3 items-center flex xl:border-none border-t border-gray-200 py-3">
+                                    <label className="xl:w-1/4 xl:inline-flex px-3 items-center flex xl:border-none border-t border-gray-200 py-3">
                                         <span className="text-right px-2 xl:px-0 xl:text-none">Pincode</span>
                                         <input name="postal_code" className="focus:outline-none px-3" placeholder="98603" />
                                     </label>

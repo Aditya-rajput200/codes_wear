@@ -60,11 +60,11 @@ function Navbar( {cart,subTotal,removeFromCart, addToCart ,clearingCart}) {
 
           
 {/*                                login button                         */}
-             {/* <button class="inline-flex items-center  bg-black-800 border-0  focus:outline-none hover:bg-gray-700 rounded text-base mt-3 md:mt-0">Login
+             <button class="inline-flex items-center  bg-black-800 border-0  focus:outline-none hover:bg-gray-700 rounded text-base mt-3 md:mt-0">Login
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-             </button> */}
+             </button>
 
            </div>
          
@@ -82,7 +82,7 @@ function Navbar( {cart,subTotal,removeFromCart, addToCart ,clearingCart}) {
 
 
   {/* here we are creating the sidebar  */}
-        <div ref={ref} className="sidebar h-[100vh] absolute top-0 right-0 px-8 py-10 transform transition-transform translate-x-full bg-pink-200"> 
+        <div ref={ref} className="sidebar  h-[100vh] absolute top-0 right-0 px-8 py-10 transform transition-transform translate-x-full bg-pink-200"> 
 
         
 <h2 className= "text-xl font-bold text-center text-black">Shoping cart</h2>
@@ -119,14 +119,16 @@ function Navbar( {cart,subTotal,removeFromCart, addToCart ,clearingCart}) {
  </ol>
  <div><h2 className='text-black  font-bold'>Subtotal : ₹{subTotal}</h2></div>
      <div className='flex  gap-2'>
+     <Link href={'/Checkout'}>
      <button className='flex  bg-pink-500 hover:bg-pink-600 font-bold p-2 rounded  ' >
-      <Link href={'/Checkout'}>
-      <p>Check-out</p><MdOutlineShoppingCartCheckout  className='mt-1  text-2xl ml-1'/>
-      </Link>
+      
+      <p>Check-out</p>
+      <MdOutlineShoppingCartCheckout  className='mt-1  text-2xl ml-1'/>
+  
   
 
    </button>
-
+   </Link>
    <button onClick={clearingCart} className='flex  bg-pink-500  hover:bg-pink-600 font-bold p-2 rounded  ' >
    <p>Clear cart</p>
 
