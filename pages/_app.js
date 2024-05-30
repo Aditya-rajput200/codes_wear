@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
  
 
   useEffect(() => {
-     console.log('Useeffect is ringing')
+
   try {
   if(localStorage.getItem("cart") ) {
     setCart(JSON.parse(localStorage.getItem("cart"))); 
